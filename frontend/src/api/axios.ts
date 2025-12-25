@@ -1,10 +1,8 @@
-// @ts-ignore
 import axios, { type AxiosResponse, type InternalAxiosRequestConfig } from 'axios'
-// @ts-ignore
 import { ElMessage } from 'element-plus'
 
 const service = axios.create({
-  baseURL: (import.meta as any).env.VITE_API_BASE_URL || '/api/v1',
+  baseURL: import.meta.env.VITE_API_BASE_URL || '/api/v1',
   timeout: 5000,
 })
 
